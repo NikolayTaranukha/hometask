@@ -1,5 +1,5 @@
 <?php
-$a = [5, 9, 3, 4, 2, 7, 15, 6, 22];
+$a = [-5, 9, 3, 4, 2, 7, 15, 6, 22];
 function myMin($myArray){
 $min = $myArray[0];
 for ($i=0;$i<count($myArray);$i++){
@@ -7,7 +7,7 @@ for ($i=0;$i<count($myArray);$i++){
         $min=$myArray[$i];
     }
     }
-    echo $min;
+    return $min;
 }
 function myMax($myArray){
     $max = $myArray[0];
@@ -16,7 +16,7 @@ function myMax($myArray){
             $max=$myArray[$i];
         }
     }
-    echo $max;
+    return $max;
 }
 echo myMin($a) . " Минимальное значение";
 echo "<br>";
