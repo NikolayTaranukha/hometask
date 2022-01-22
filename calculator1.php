@@ -12,30 +12,31 @@
 <body>
 <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
-        <form action="calcmozgi.php" method="get">
+        <form>
             <div class="mb-3">
                 <p>
-                    Первое число:<input type="number" name ="1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label>Первое число:<input type="number"  name ="first" class="form-control" id="first" aria-describedby="emailHelp">
                 </p>
             </div>
             <div class="mb-3">
-                <select class="form-select" aria-label="Default select example" name="3">
+                <label><select id="operation" class="form-select" aria-label="Default select example" name="operation">
                     <option disabled>Выберите действие</option>
                     <option>+</option>
                     <option>-</option>
                     <option>*</option>
                     <option>/</option>
-                </select></p>
+                </select>
             </div>
             <div class="mb-3">
                 <p>
-                    Второе число:<input type="number" name="2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label>Второе число:<input type="number" name="second" class="form-control" id="second" aria-describedby="emailHelp">
                 </p>
             </div>
-            <button type="submit" class="btn btn-primary">Расчитать</button>
+            <button type="submit" id="result" class="btn btn-primary">Расчитать</button>
         </form>
-    </div>
-</div>
-
+    </div id="myError"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/calc.js"></script>
 </body>
 </html>
+ 

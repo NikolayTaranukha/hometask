@@ -1,7 +1,7 @@
 <?php
-$ravno=$_GET['3'];
-$a=$_GET['1'];
-$b=$_GET['2'];
+$ravno=$_GET['myOperation'];
+$a=$_GET['myFirst'];
+$b=$_GET['mySecond'];
 switch($ravno){
     case "+":
             $c=0;
