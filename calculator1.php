@@ -12,14 +12,14 @@
 <body>
 <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
-        <form>
+        <form action="calcmozgi.php" method="get" id="form">
             <div class="mb-3">
                 <p>
-                    <label>Первое число:<input type="number"  name ="first" class="form-control" id="first" aria-describedby="emailHelp">
+                    Первое число:<input type="number"  name ="first" class="form-control" id="first" aria-describedby="emailHelp">
                 </p>
             </div>
             <div class="mb-3">
-                <label><select id="operation" class="form-select" aria-label="Default select example" name="operation">
+                <select id="operation" class="form-select" aria-label="Default select example" name="operation">
                     <option disabled>Выберите действие</option>
                     <option>+</option>
                     <option>-</option>
@@ -29,7 +29,7 @@
             </div>
             <div class="mb-3">
                 <p>
-                    <label>Второе число:<input type="number" name="second" class="form-control" id="second" aria-describedby="emailHelp">
+                    Второе число:<input type="number" name="second" class="form-control" id="second" aria-describedby="emailHelp">
                 </p>
             </div>
             <button type="submit" id="result" class="btn btn-primary">Расчитать</button>

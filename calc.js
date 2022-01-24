@@ -1,3 +1,4 @@
+
 $("#result").on("click", function() {
     var first = $("#first").val().trim();
     var operation = $("#operation").val().trim();
@@ -13,7 +14,6 @@ $("#result").on("click", function() {
         return false;
         }
         $("#myError").text("");
-
         $.ajax({
         url: 'calcmozgi.php',
         type: 'GET',
